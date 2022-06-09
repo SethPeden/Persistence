@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Property Files #
 *.properties
+
+# Target Foler #
+target/
