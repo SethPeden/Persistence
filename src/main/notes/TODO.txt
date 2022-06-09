@@ -1,0 +1,14 @@
+Next Steps
+    - Create structures to modify the database structure for any tables.
+    - Create supertype for all classes that will be persisted (i.e. 'Persistent')
+    - For non primitive member types
+        - If a type of a 'Persistent' class is also 'Persistent',
+            then the column should be a foreign key with that object's ID
+        - Else, the Object should be converted to a JSON and saved as a String.
+
+
+Ideas:
+    - Members of persistent classes are by default persisted.
+    - Ability to mark certain members of Persistent classes as non-persistent?
+    - Methods of persistent classes are by default non persistent.
+    - Ability to mark certain methods as persistent so calculated members can be included in the DB?
